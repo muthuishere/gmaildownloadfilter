@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Generate Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootcustom.css">
+ <script src="scripts/jquery.min.js"></script>
+ <script src="scripts/mustache.min.js"></script>    
+  <script src="scripts/bootstrap.min.js"></script> 
+  
+  
+</head>
+<body >
+
+<div class="container">
+  
+  <h2 style="margin-bottom:30px"><img src="images/gmailfilter-download-38.png"/>Gallery Builder</h2>
+
+
+
+   
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Build</a></li>
+    <li style="visibility:hidden"><a data-toggle="tab" href="#customfunctions">Custom Functions</a></li>    
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active ">
+      
+      <p>
+	  
+	
+
+	   <div class="form-group">
+    <h4>Thumbnail URL</h4>
+    <input class="form-control input-lg" id="inputthumblg" placeholder="Enter URL parameters marked with [0-9;1],[a-z]...."  type="text" data-tmpvalue="http://muthu.com/images/image[00-98;1]/id_[1-4]t">
+  </div>
+  
+  <div class="form-group">
+    <h4>Content URL</h4>
+    <input class="form-control input-lg" id="inputcontentlg" placeholder="Enter URL parameters marked with [0-9;1],[a-z]...."  type="text">
+  </div>
+  
+ 
+
+   <div class="form-group">
+     <h4>Referrer</h4>
+    <div class="row">
+			<div class="col-md-8 ">  <input class="form-control input-lg" id="referrer" placeholder="Enter referrer url"  type="text"></div>
+			<div class="col-md-4  "> <button type="button" class="btn btn-primary pull-right btnbuild">Build Now</button></div>
+  </div>
+   </div>
+  
+  
+  
+   <div class="form-group">
+     <h4>Preview</h4>
+    
+   </div>
+
+	  <div id="tbl" >
+	  
+	  
+	  <div  class="pre-scrollable rounded" style="border:1px solid #000;height:400px;overflow-x:hidden;">
+		<div class="row">
+			<div class="col-md-6 ">
+				
+				<p align="center"><strong>ThumbURL</strong></p>
+
+<div class="list-group lstThumbnails">
+<!-- <a href="#" class="list-group-item">fdSecond item</a>
+<a href="#" class="list-group-item">Second item</a> -->
+	</div>
+
+
+			</div>
+			
+			<div class="col-md-6">
+<p align="center"><strong>ContentURL</strong></p>
+				<div class="list-group lstContentImages" >
+<!-- <a href="#" class="list-group-item">Second item</a>
+<a href="#" class="list-group-item">Sffecond item</a> -->
+	</div>
+
+			</div>
+		</div>
+
+
+</div>
+
+		
+	</div>
+	<br/></br/>
+		<div  class="pre-scrollable " style="border:1px solid #000;height:400px;overflow-x:hidden;">
+		<div class="row">
+			<div class="col-md-12">
+				<img class="imgpreview" src="images/blank.png">
+				 </div>
+			</div>
+		
+	</div>
+	
+		
+	
+
+	  </p>
+    </div>
+    
+	
+  </div>
+</div>
+
+  <script src="scripts/generateoptions.js"></script>
+ 
+  
+</body>
+</html>

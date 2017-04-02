@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gallery Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1><small>Frequently Asked Questions</small></h1>
+</div>
+
+<!-- Bootstrap FAQ - START -->
+<div class="container">
+    <br />
+    <br />
+    <br />
+
+   <!-- <div class="alert alert-warning alert-dismissible" style="display:none" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        This section contains a wealth of information, related to <strong>PrepBootstrap</strong> and its store. If you cannot find an answer to your question, 
+        make sure to contact us. 
+    </div> -->
+
+    <br />
+
+    <div class="panel-group" id="accordion">
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Why ?</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                   To generate gallery with single image to  list of images (if image just has numeric increment or alphabet increment)
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle  collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">How</a>
+                </h4>
+            </div>
+            <div id="collapseTen" class="panel-collapse collapse in">
+                <div class="panel-body">
+				
+				<ul>
+					<li>Right Click on any Image in web page  , and select Build Gallery
+					<li>	The Image will be auto filled in the Gallery Builder page.
+						
+					<li>	if the image is 
+						<ul><li>	http://www.deemwar.com/kata03/content01.gif </ul>
+							
+						<li>you can see all the list of images by changing the image url 
+						<ul>	<li>http://www.deemwar.com/kata03/content[01-03].gif</ul>
+							
+						
+						<li>The preview of the generated images will be listed on preview pane 
+							<ul><li>	http://www.deemwar.com/kata03/content01.gif
+								<li>http://www.deemwar.com/kata03/content01.gif
+								<li>http://www.deemwar.com/kata03/content01.gif</ul>
+								
+						<li>And Click Build so it would open page with the generated images.	
+						</ul>
+				
+				
+					
+                </div>
+            </div>
+        </div>
+		
+       
+        </div>
+        
+		
+		
+</div>
+
+<style>
+    .faqHeader {
+        font-size: 27px;
+        margin: 20px;
+    }
+
+    .panel-headingnew [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e072"; /* "play" icon */
+        float: right;
+        color: #F58723;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-headingnew [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+	
+</style>
+
+<!-- Bootstrap FAQ - END -->
+
+</div>
+
+</body>
+</html>

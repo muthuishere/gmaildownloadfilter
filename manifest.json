@@ -1,0 +1,38 @@
+{
+   "author": "Muthukumaran Navaneethakrishnan(https://github.com/muthuishere)",
+   "background": {
+      "scripts": [  "scripts/global.js","scripts/base64.js" ]
+   },
+   "description": "Download attachments in gmail based on filters",
+  
+ 
+  "content_security_policy": "script-src https://*.google.com 'unsafe-eval'; object-src 'self'",
+  "oauth2": {
+    "client_id": "1147620893-ee7qmlt7mk0eaf764l18ennfrnnn8urr.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.modify"
+    ]
+  },
+   "icons": {
+      "128": "images/gmailfilter-download-128.png",
+      "48": "images/gmailfilter-download-48.png",
+      "64": "images/gmailfilter-download-64.png"
+   },
+   
+   "page_action" :
+	  {
+	    "default_icon" : "images/gmailfilter-download-19.png",
+	    "default_title" : "Gmail Attachment filter"
+	  },
+
+   "manifest_version": 2,
+   "name": "Gmail Attachment filter",
+   "options_page": "options.html",  
+   "permissions": [ "identity",
+    "*://*.google.com/*","tabs", "downloads","contextMenus","declarativeContent","notifications", "http://*/*", "https://*/*" ],
+   "short_name": "gmailfilter-download",   
+   "version": "1.0.0",
+   "web_accessible_resources": [ "images/*.png","images/*.svg","faq/images/*.png"]
+}
+
+
